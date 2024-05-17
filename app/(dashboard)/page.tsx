@@ -4,9 +4,9 @@ import {Button} from "@/components/ui/button"
 const TestPage = () => {
   
     return (
-  <Button variant="blue">
-    Click Me
-  </Button>
+  <p>
+    This is an authenticated route
+  </p>
     );
 
 }
