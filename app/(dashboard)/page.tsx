@@ -1,14 +1,5 @@
-import Image from "next/image";
-import {Button} from "@/components/ui/button"
+import { UserButton } from "@clerk/nextjs";
 
-const TestPage = () => {
-  
-    return (
-  <p>
-    This is an authenticated route
-  </p>
-    );
-
+export default function Home(){
+  return (<UserButton afterSignOutUrl="/"/>)
 }
-
-export default TestPage;
