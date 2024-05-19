@@ -2,11 +2,14 @@ type Props = {
     children: React.ReactNode;
 } 
 
-const DashboardLayout = () => {
+const DashboardLayout = ({children}: Props) => {
     return (
-        <div>
-            Dashboard Page
-        </div>
+        <>
+         <main className="px-3 lg:px-14">
+       {children}      
+         </main>
+        </>
+       
     )
 }
 
